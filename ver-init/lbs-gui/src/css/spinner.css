@@ -1,0 +1,78 @@
+.spinner-bars {
+    display: block;
+    position: relative;
+    height: 25px;
+    width: 50px;
+}
+
+.spinner-bars span {
+    position: absolute;
+    display: block;
+    bottom: 10px;
+    width: 9px;
+    height: 5px;
+    background-color: var(--color-bg4);
+}
+
+.spinner-bars span:nth-child(2) {
+    left: 11px;
+}
+
+.spinner-bars span:nth-child(3) {
+    left: 22px;
+}
+
+.spinner-bars span:nth-child(4) {
+    left: 33px;
+}
+
+.spinner-bars span:nth-child(5) {
+    left: 44px;
+}
+
+.spinner-bars.active span {
+    animation: spinner-bars 1.5s  infinite ease-in-out;
+}
+
+.spinner-bars.active span:nth-child(2) {
+    left: 11px;
+    animation-delay: 0.2s;
+}
+
+.spinner-bars.active span:nth-child(3) {
+    left: 22px;
+    animation-delay: 0.4s;
+}
+
+.spinner-bars.active span:nth-child(4) {
+    left: 33px;
+    animation-delay: 0.6s;
+}
+
+.spinner-bars.active span:nth-child(5) {
+    left: 44px;
+    animation-delay: 0.8s;
+}
+
+@keyframes spinner-bars {
+    0% {
+        height: 5px;
+        transform: translateY(0px);
+        background-color: var(--color-bg3);
+    }
+    25% {
+        height: 20px;
+        transform: translateY(8px);
+        background-color: var(--color-bg4);
+    }
+    50% {
+        height: 5px;
+        transform: translateY(0px);
+        background-color: var(--color-bg3);
+    }
+    100% {
+        height: 5px;
+        transform: translateY(0px);
+        background-color: var(--color-bg3);
+    }
+}

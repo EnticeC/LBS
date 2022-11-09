@@ -1,0 +1,51 @@
+.sort-items-wrapper {
+    width: 500px;
+}
+
+.sort-items-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 0 5px;
+    background-color: var(--color-bg2);
+    margin: 3px 0;
+    overflow: hidden;
+}
+
+.sort-items-btns-wrapper {
+    transform: scale(0.6);
+}
+
+.sort-items-btns-wrapper .button {
+    display: block;
+}
+
+.sort-items-item-label {
+    padding: 5px;
+    display: flex;
+    white-space: nowrap;
+    flex: 0 0 100px;
+    /* flex-basis: 100px; */
+    align-items: center;
+}
+
+.sort-items-item-details {
+    color: var(--color);
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    /* width: 100px; */
+    /* white-space: nowrap; */
+    /* overflow: hidden; */
+    /* text-overflow: ellipsis; */
+}
+
+.sort-items-item-comment {
+    color: var(--color);
+    padding: 5px;
+    position: absolute;
+    right: 3px;
+    display: flex;
+    align-items: center;
+}

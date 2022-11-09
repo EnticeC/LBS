@@ -1,0 +1,98 @@
+.section {
+    position: relative;
+    background-color: var(--color-bg2);
+    padding: 10px 7px;
+    margin: 0 0 20px 0;
+    border-radius: 7px;
+}
+
+.section-header {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.section-title {
+    position: relative;
+    cursor: pointer;
+    display: block;
+    margin: 0;
+    padding: 5px 20px;
+    line-height: 1.5;
+    font-weight: 600;
+    font-size: 14px;
+    border: none;
+    background-color: transparent;
+    transition: border-color .12s ease-in-out, transform .12s ease-in;
+    outline: none;
+}
+
+.section-title::before,
+.section-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 2px;
+    height: 50%;
+    background-color: currentColor;
+    transition: transform .2s cubic-bezier(.4,.1,0,1);
+}
+.section-title::before {
+    top: 0;
+    transform-origin: bottom center;
+    transform: translateX(.7em) rotate(-30deg) scale(.75);
+}
+.section-title::after {
+    bottom: 0;
+    transform-origin: top center;
+    transform: translateX(.7em) rotate(30deg) scale(.75);
+}
+
+.section-title:hover::before {
+    transform: translateX(.7em) rotate(-30deg) scale(.9);
+    transition: transform .24s ease-out;
+}
+.section-title:hover::after {
+    transform: translateX(.7em) rotate(30deg) scale(.9);
+    transition: transform .24s ease-out;
+}
+.section-title:active::before,
+.section-title:active::after {
+    transform: translate(3px, 3px);
+    transition: transform .06s linear;
+}
+.section-title:hover {
+    transform: translate(1px, 1px);
+    transition: transform .24 ease-out;
+}
+.section-title:active {
+    transform: translateX(3px) translateY(3px);
+    transition: transform .06s linear;
+}
+
+.is-open.section-title::before,
+.is-open.section-title::after {
+    transform: rotate(0deg);
+}
+.is-open.section-title:hover::before {
+    transform: translateX(1px);
+    transition: transform .24s ease-out;
+}
+.is-open.section-title:hover::after {
+    transform: translateX(1px);
+    transition: transform .24s ease-out;
+}
+.is-open.section-title:active::before,
+.is-open.section-title:active::after {
+    transform: translate(3px, 3px);
+    transition: transform .06s linear;
+}
+.is-open.section-title:hover {
+    transform: translate(1px, 1px);
+    transition: transform .24 ease-out;
+}
+.is-open.section-title:active {
+    transform: translate(3px, 3px);
+    transition: transform .06s linear;
+}

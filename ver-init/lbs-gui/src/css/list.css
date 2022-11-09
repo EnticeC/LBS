@@ -1,0 +1,37 @@
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.summary-table {
+    flex-basis: 270px;
+    overflow: auto;
+    list-style: none;
+}
+
+.summary-table:not(:last-of-type) {
+    margin-right: 75px;
+}
+
+.summary-table li {
+    padding: 2.5px 10px;
+}
+
+.summary-table li div {
+    position: relative;
+    display: inline-block;
+}
+
+.summary-table li.summary.first {
+    border-top: 2px solid var(--color-border3);
+}
+
+.summary-table .key {
+    width: 70%;
+}
+
+.summary-table .value {
+    width: 30%;
+    text-align: right;
+}

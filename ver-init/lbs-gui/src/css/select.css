@@ -1,0 +1,52 @@
+.select-wrapper {
+    position: relative;
+    font-family: monospace;
+}
+
+.select-wrapper .input {
+    font-size: 13px;
+    font-family: monospace;
+    width: 95%;
+}
+
+.select {
+    position: absolute;
+    background-color: var(--color-bg);
+    z-index: 10;
+    top: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: solid 1px var(--color-border);
+}
+
+.select .scroller {
+    padding: 0 10px;
+}
+
+/* .select::before { */
+/*     content: ""; */
+/*     position: absolute; */
+/*     z-index: 10; */
+/*     top: 0; */
+/*     left: 0; */
+/*     pointer-events: none; */
+/*     background-image : linear-gradient(to top, */
+/*         rgba(17, 26, 54, 0), */
+/*         rgba(17, 26, 54, 0.8) 85%); */
+/*     width: 100%; */
+/*     height: 50%; */
+/* } */
+
+/* .select::after { */
+/*     content: ""; */
+/*     position: absolute; */
+/*     z-index: 10; */
+/*     bottom: 0; */
+/*     left: 0; */
+/*     pointer-events: none; */
+/*     background-image : linear-gradient(to bottom, */
+/*         rgba(17, 26, 54, 0), */
+/*         rgba(17, 26, 54, 0.8) 85%); */
+/*     width: 100%; */
+/*     height: 50%; */
+/* } */
