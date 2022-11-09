@@ -1,0 +1,124 @@
+button {
+    font-size: 13px;
+}
+
+.button {
+    color: var(--color);
+    border: none;
+    outline: none;
+    /* background-color: #EEEEEE; */
+    background-color: var(--color-buttonbg);
+    border-radius: 4px;
+    transition: transform 240ms linear, background-color 240ms linear;
+}
+
+.button:disabled {
+    color: var(--color-disabled);
+}
+
+.button:enabled {
+    cursor: pointer;
+}
+
+.button:hover:enabled {
+    background-color: var(--color-hoverbg);
+    /* background-color: #CCCCCC; */
+    transition: transform 240ms linear, background-color 240ms linear;
+}
+
+.button:active:enabled {
+    background-color: var(--color-activebg);
+    /* background-color: #AAAAAA; */
+    /* transform: translateY(50%) translateX(10%); */
+    transition: transform 240ms linear, background-color 240ms linear;
+}
+
+.icon-button {
+    color: var(--color);
+    width: 1em;
+    height: 1em;
+    margin-right: 40px;
+    border: none;
+    outline: none;
+    padding: 0;
+    background-color: transparent;
+    transition: transform 240ms linear, color 240ms ease-in;
+}
+
+.icon-button:disabled {
+    color: var(--color-disabled);
+}
+
+.icon-button:enabled {
+    cursor: pointer;
+}
+
+.icon-button:enabled:hover {
+    color: var(--color-hoverbg);
+    transition: color .24s ease-out, transform .12s ease-in;
+}
+
+.icon-button:enabled:active {
+    color: var(--color-activebg);
+    /* transform: translateY(5px); */
+    transition: color .24s ease-out, transform .12s ease-out;
+}
+
+.set-fixed-jobs-btn-wrapper {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.set-fixed-jobs-btn {
+    color: var(--color);
+    outline: none;
+    border: none;
+    background: transparent;
+    font-size: 24px;
+    transition: color .24s ease-in, transform .12s ease-in;
+}
+
+.set-fixed-jobs-btn:disabled {
+    color: var(--color-disabled);
+}
+
+.set-fixed-jobs-btn:enabled {
+    cursor: pointer;
+}
+
+.set-fixed-jobs-btn:enabled:hover {
+    color: var(--color-hoverbg);
+    transition: color .24s ease-out, transform .12s ease-in;
+}
+
+.set-fixed-jobs-btn:enabled:active {
+    color: var(--color-activebg);
+    /* transform: translateY(5px); */
+    transition: color .24s ease-out, transform .12s ease-out;
+}
+
+/* .set-fixed-jobs-btn.disabled { */
+/*     pointer-events: none; */
+/*     color: #AAAAAA; */
+/* } */
+
+.form-field-btn {
+    color: var(--color);
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    transition: color .24s ease-in, transform .12s ease-in;
+}
+
+.form-field-btn:hover {
+    color: var(--color-hoverbg);
+    transition: color .24s ease-out, transform .12s ease-in;
+}
+
+.form-field-btn:active {
+    color: var(--color-activebg);
+    /* transform: translateY(5px); */
+    transition: color .24s ease-out, transform .12s ease-out;
+}

@@ -1,0 +1,56 @@
+.page {
+    background-color: var(--color-bg);
+    position: relative;
+    width: 100%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 20px;
+    font-size: 13px;
+    overflow-x: visible;
+    overflow-y: auto;
+}
+
+.page.schedule-timeline {
+    overflow-x: auto;
+}
+
+.context-menu {
+    display: none;
+    border: 1px solid var(--color-border3);
+    border-radius: 5px;
+    z-index: 1;
+    padding: 3px 5px;
+    background-color: var(--color-bg4);
+}
+
+.context-menu.is-shown {
+    display: block;
+    position: fixed;
+}
+
+.context-menu-item {
+    padding: 3px 7px;
+    cursor: default;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    text-align: left;
+}
+
+.context-menu-item:disabled {
+    color: var(--color-disabled);
+}
+
+.context-menu-item:enabled:hover {
+    background-color: var(--color-hoverbg);
+}
+
+.steps-content {
+    min-height: 500px;
+    margin-top: 16px;
+}

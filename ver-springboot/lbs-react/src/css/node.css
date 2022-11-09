@@ -1,0 +1,51 @@
+.node {
+    position: absolute;
+    top: 20%;
+    transform: translateY(-50%);
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    color: var(--color);
+    border: 2px dashed var(--color-border3);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 26px;
+    background: var(--color-bg3);
+    z-index: 1;
+}
+
+.node > * {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.node-note {
+    position: absolute;
+    top: 40px;
+    white-space: nowrap;
+    color: var(--color-disabled);
+}
+
+.node-note.current {
+    color: var(--color);
+    font-weight: bold;
+}
+
+.node-note.finished {
+    color: var(--color-disabled);
+}
+
+.node.current {
+    color: var(--color);
+    font-weight: bold;
+    border: 2px solid var(--color-border4);
+    background: var(--color-bg4);
+}
+
+.node.finished {
+    color: var(--color-disabled);
+    border: 2px solid var(--color-border3);
+    background: var(--color-bg3);
+}

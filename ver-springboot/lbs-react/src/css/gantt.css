@@ -1,0 +1,111 @@
+.gantt-container {
+    height: 100%;
+}
+
+.gantt_layout_cell_border_top {
+    border-top-color: var(--color-border2);
+}
+
+.gantt_layout_cell_border_right {
+    border-right-color: var(--color-border2);
+}
+
+.gantt_layout_cell_border_bottom {
+    border-bottom-color: var(--color-border2);
+}
+
+.gantt_layout_cell_border_left {
+    border-left-color: var(--color-border2);
+}
+
+.gantt_grid_scale, .gantt_task_scale {
+    background-color: var(--color-bg);
+    color: var(--color);
+    border-bottom-color: var(--color-border2);
+}
+
+.gantt_row, .gantt_task_row {
+    background-color: var(--color-bg);
+    border-bottom-color: var(--color-border2);
+}
+
+.gantt_row.odd, .gantt_task_row.odd {
+    background-color: var(--color-bg2);
+}
+
+.gantt_grid_data .gantt_cell {
+    color: var(--color);
+}
+
+.gantt_task_cell {
+    border-right-color: var(--color-border2);
+}
+
+.gantt_task .gantt_task_scale .gantt_scale_cell {
+    color: var(--color);
+    border-right-color: var(--color-border2);
+}
+
+.gantt_scale_line {
+    border-top-color: var(--color-border2);
+}
+
+.gantt_container, .gantt_tooltip {
+    background-color: var(--color-bg);
+    color: var(--color);
+}
+
+.gantt_task_content {
+    color: var(--color-header);
+}
+
+.gantt_line_wrapper div {
+    background-color: var(--color-disabled);
+}
+
+.gantt_link_arrow_right {
+    border-color: var(--color-disabled);
+}
+
+.gantt_grid_data .gantt_row.gantt_selected,
+.gantt_grid_data .gantt_row.odd.gantt_selected,
+.gantt_task_row.gantt_selected {
+    background-color: var(--color-hoverbg);
+}
+
+.gantt_task_row.gantt_selected .gantt_task_cell {
+    border-right-color: var(--color-border2);
+}
+
+.gantt_grid_data .gantt_row.odd:hover,
+.gantt_grid_data .gantt_row:hover {
+    background-color: var(--color-hoverbg);
+}
+
+.gridHoverStyle, .gridSelection, .timelineSelection {
+    background-color: var(--color-hoverbg);
+}
+
+.gantt_layout_content {
+    background-color: var(--color-bg);
+}
+
+.gantt_tree_icon_folder {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .finished { */
+/*     background-color: var(--color-tr-finished); */
+/* } */
+
+/* .waiting { */
+/*     background-color: var(--color-tr-waiting); */
+/* } */
+
+/* .in-production { */
+/*     background-color: var(--color-tr-inproduction); */
+/* } */

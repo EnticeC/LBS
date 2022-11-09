@@ -1,0 +1,12 @@
+.horizontal-line {
+    position: absolute;
+    top: 20%;
+    transform: translateY(-50%);
+    display: inline-block;
+    height: 2px;
+    background: var(--color-border3);
+}
+
+.horizontal-line.dashed {
+    background: repeating-linear-gradient(to right, var(--color-border3) 0, var(--color-border3) 5px, transparent 5px, transparent 8px);
+}

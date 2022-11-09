@@ -1,0 +1,109 @@
+/* Form-group -------------------------------- */
+.form-group {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.form-group.low {
+    margin-top: 100px;
+}
+
+.form-group.sticky {
+    background-color: inherit;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    position: sticky;
+    bottom: 0;
+}
+
+.form-group.low-right {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.flex-label {
+    /* order: 0; */
+    width: 140px;
+    text-align: left;
+}
+
+.flex-input {
+    /* order: 1; */
+    /* flex-grow: 1; */
+    text-align: center;
+}
+
+.flex-button {
+    /* order: 2; */
+    width: 140px;
+    text-align: center;
+    position: relative;
+    white-space: nowrap;
+}
+
+input {
+    color: var(--color);
+}
+
+.flex-input .input {
+    width: 95%;
+}
+
+.input {
+    border: 0;
+    border-bottom: 2px solid var(--color-border3);
+    outline: none;
+    padding: 0 10px;
+    margin: 0 3px;
+    font-size: 13px;
+    background: transparent;
+}
+
+.input[type=datetime-local] {
+    padding: 0 10px;
+}
+
+input[type=checkbox].pseudo-checked:before {
+    content: '✔';
+    position: absolute;
+    top: 1px;
+    left: 2px;
+    /* font-size: 18px; */
+    line-height: 0.8;
+    color: var(--color-disabled);
+}
+
+input[type=checkbox].pseudo-checked {
+    position: relative;
+
+}
+
+/* Run -------------------------------- */
+/* button - progressBar */
+.flex-progress {
+    flex-grow: 1;
+}
+
+.flex-progress .progress-bar {
+    width: 100%;
+    margin: auto;
+}
+
+.flex-button button {
+    width: 90%;
+}
+
+.form-group progress {
+    margin-right: 5px;
+    width: 95%;
+}
+
+/* Date picker */
+.date-picker {
+    background: transparent;
+    border: none;
+    outline: none;
+}

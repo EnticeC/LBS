@@ -1,0 +1,32 @@
+.tag-box {
+    display: inline;
+    position: relative;
+    background-color: var(--color-bg4);
+    padding: 2px 5px;
+    margin: 0 3px;
+    border-radius: 5px;
+}
+
+.tag-box.clickable {
+    cursor: pointer;
+}
+
+.tag-box.clickable:hover {
+    background-color: var(--color-hoverbg);
+    /* background-color: var(--color-bg4); */
+    transition: background-color 240ms linear;
+}
+
+.tag-box.clickable:hover:after {
+    content: '';
+    position: absolute;
+    top: calc(50% - 1.5px);
+    left: 0;
+    border-bottom: 2px solid var(--color);
+    width: 100%;
+}
+
+.tag-box.clickable:active {
+    transform: translateY(3px);
+    transition: background-color 240ms linear;
+}

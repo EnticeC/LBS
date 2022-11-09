@@ -1,0 +1,20 @@
+.login-container {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: min(300px, 100vw);
+    height: min(200px, 100vh);
+    border: solid 1px var(--color-border);
+    box-shadow: inset 0px 0px 20px 5px var(--color-border);
+    border-radius: 10px;
+    background-color: var(--color-bg);
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.login-container input {
+    font-family: monospace;
+}

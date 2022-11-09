@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    /* overscroll-behavior-x: none; */
+}
+
+html {
+    height: 100%;
+    overflow: hidden; /* Prevents rubber-band scrolling of the whole "page" */
+}
+
+body {
+    height: 100%;
+    font-size: 13px;
+    color: var(--color);
+}
+
+.blurred {
+    filter: blur(5px);
+    pointer-events: none;
+}
+
+#root {
+    height: 100%;
+}
+
+/* /\* Scrollbar *\/ */
+/* ::-webkit-scrollbar { */
+/*     background-color: var(--color-bg2); */
+/*     /\* display: none; *\/ */
+/* } */
+
+/* ::-webkit-scrollbar-corner { */
+/*     background-color: var(--color-hoverbg); */
+/* } */
+
+/* ::-webkit-scrollbar-thumb { */
+/*     background-color: var(--color-activebg); */
+/* } */

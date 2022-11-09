@@ -1,0 +1,117 @@
+.title-bar {
+    background-color: var(--color-bg);
+    border-bottom: 2px solid var(--color-border);
+    height: 30px;
+    display: flex;
+    /* justify-content: flex-end; */
+    align-items: center;
+}
+
+.title-bar-title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.title-bar-draggable {
+    -webkit-app-region: drag;
+    flex-grow: 1;
+    height: 100%;
+}
+
+.title-bar-title-icon-win {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 15px;
+}
+
+.title-bar-title-icon-mac {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.title-bar-button {
+    height: 100%;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+
+.title-bar-icon-scaled-up svg {
+    transform: scale(1.2);
+} 
+
+.title-bar-button:hover {
+    background-color: var(--color-hoverbg);
+}
+
+.title-bar-button:active {
+    background-color: var(--color-activebg);
+}
+
+.title-bar-button-window-minimize {
+    height: 12px;
+    width: 12px;
+    border-bottom: 2px solid var(--color);
+}
+
+.title-bar-button-window-maximize {
+    height: 12px;
+    width: 12px;
+    border: 2px solid var(--color);
+}
+
+.title-bar-button-window-close {
+    height: 12px;
+    width: 12px;
+    position: relative;
+}
+
+.title-bar-button-window-close:before, .title-bar-button-window-close:after {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 2px;
+    background-color: var(--color);
+    border-radius: 2px;
+    top: 5px;
+}
+
+.title-bar-button-window-close:before {
+    transform: rotate(45deg);
+}
+
+.title-bar-button-window-close:after {
+    transform: rotate(-45deg);
+}
+
+.title-bar-button-window-unmaximize {
+    height: 12px;
+    width: 12px;
+    position: relative;
+}
+
+.title-bar-button-window-unmaximize:before, .title-bar-button-window-unmaximize:after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border: 2px solid var(--color);
+    border-radius: 1px;
+}
+
+.title-bar-button-window-unmaximize:before {
+    left: 1px;
+    top: 3px;
+    background-color: var(--color-bg);
+    z-index: 1;
+}
+
+.title-bar-button-window-unmaximize:after {
+    left: 4px;
+    top: 1px;
+}

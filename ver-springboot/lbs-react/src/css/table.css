@@ -1,0 +1,61 @@
+@import '~antd/dist/antd.css';
+
+/* Table -------------------- */
+.table-container {
+    overflow: auto;
+    padding: 0;
+    /* margin: 5px; */
+    background: transparent;
+    border-radius: 6px;
+    /* text-align: center; */
+}
+
+.table-container thead tr,
+.thead .tr {
+    background-color: var(--color-bg3);
+}
+
+.table-container tr:nth-child(even),
+.tr.even {
+    /* background-color: var(--color-bg2); */
+    background-color: var(--color-bg);
+}
+
+.sub-table-container {
+    overflow: auto;
+    padding: 0;
+    background: transparent;
+    /* text-align: center; */
+}
+
+.sub-table-container thead tr,
+.thead .tr {
+    background-color: var(--color-bg3);
+}
+
+.sub-table-container tr:nth-child(even),
+.tr.even {
+    background-color: var(--color-bg);
+}
+
+.editable-row .ant-form-item-explain {
+    position: absolute;
+    top: 100%;
+    font-size: 12px;
+}
+
+.col_background {
+    background-color: burlywood;
+}
+
+.row_background_2 td {
+    background-color:cyan;
+}
+
+.row_background_3 td {
+    background-color: yellow;
+}
+
+.row_background_4 td {
+    background-color:green;
+}

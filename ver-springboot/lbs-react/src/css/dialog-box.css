@@ -1,0 +1,44 @@
+.dialog-box {
+    position: fixed;
+    z-index: 1;
+    /* overflow: visible; */
+    /* overflow-x: visible; */
+    overflow-y: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 40%;
+    max-height: 95vh;
+    padding: 0 20px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    background-color: var(--color-bg4);
+    box-shadow: 0px 0px 300px -20px rgba(0, 0, 0, 0.75);
+}
+
+.dialog-box h2 {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.dialog-box p {
+    margin: 20px 0;
+}
+
+.dialog-box .form-group {
+    width: 100%;
+}
+
+/* .dialog-box .scroller li { */
+/*     transform: translateX(-8.5px); */
+/* } */
+
+/* .dialog-box .scroller li:hover { */
+/*     transform: translateX(-8.5px) scaleX(1.1); */
+/* } */
+
+/* .dialog-box .scroller li:active { */
+/*     transform: translateX(-5.5px) translateY(3px); */
+/* } */
